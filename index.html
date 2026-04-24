@@ -172,14 +172,23 @@
             </p>
 
             <!-- CTA buttons -->
-            <div class="fade-up-delay-3 flex flex-wrap gap-4 mt-10">
+            <div class="fade-up-delay-3 flex flex-wrap items-center gap-5 mt-10">
                 <a href="#projects"
-                    class="px-6 py-3 bg-blue-600 hover:bg-blue-500 text-white text-sm font-medium
-                  rounded-lg transition-all duration-200 hover:-translate-y-0.5 hover:shadow-lg hover:shadow-blue-600/30">
-                    Xem dự án
+                    class="relative group px-8 py-3.5 bg-transparent overflow-hidden rounded-xl transition-all duration-300 hover:-translate-y-1">
+                    <!-- Nền gradient phát sáng -->
+                    <div class="absolute inset-0 bg-gradient-to-r from-blue-600 to-indigo-600 rounded-xl opacity-90 group-hover:opacity-100 transition-opacity duration-300"></div>
+                    <div class="absolute inset-0 opacity-0 group-hover:opacity-30 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-white via-transparent to-transparent blur-md transition-opacity duration-300"></div>
+                    <!-- Chữ -->
+                    <span class="relative z-10 text-white text-sm font-semibold tracking-wide flex items-center gap-2">
+                        Xem dự án tiêu biểu
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 group-hover:translate-x-1 transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                        </svg>
+                    </span>
                 </a>
-                <a href="#contact" class="px-6 py-3 border border-slate-700 hover:border-slate-500 text-slate-300 hover:text-white
-                  text-sm font-medium rounded-lg transition-all duration-200 hover:-translate-y-0.5">
+                
+                <a href="#contact" class="px-6 py-3.5 border border-slate-700 hover:border-blue-400/50 text-slate-300 hover:text-white
+                  text-sm font-medium rounded-xl transition-all duration-300 hover:-translate-y-1 hover:bg-blue-900/10">
                     Liên hệ tôi
                 </a>
             </div>
@@ -194,16 +203,24 @@
 
     </section>
     <!-- MỤC TIÊU NGHỀ NGHIỆP -->
-    <section id="objective" class="py-12">
+    <section id="objective" class="py-12 relative z-10">
         <div class="max-w-5xl mx-auto px-6">
-            <h2 class="text-2xl font-serif font-semibold text-white mb-6">Mục tiêu nghề nghiệp</h2>
-            <div
-                class="bg-slate-900/50 border border-slate-800/50 p-6 md:p-8 rounded-2xl hover:border-slate-700 transition-colors duration-300">
-                <p class="text-slate-400 leading-relaxed">
+            <div class="relative group bg-slate-900/40 backdrop-blur-md border border-slate-700/50 p-8 md:p-12 rounded-[2rem] overflow-hidden hover:border-blue-500/40 transition-all duration-500 hover:shadow-[0_0_40px_-15px_rgba(59,130,246,0.2)]">
+                <!-- Hiệu ứng viền sáng chạy ngang -->
+                <div class="absolute top-0 left-0 w-full h-[2px] bg-gradient-to-r from-transparent via-blue-500 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
+                
+                <h2 class="text-xl font-semibold text-slate-300 uppercase tracking-widest mb-6 flex items-center gap-3">
+                    <span class="w-8 h-[1px] bg-blue-500 inline-block"></span>
+                    Mục tiêu nghề nghiệp
+                </h2>
+                
+                <p class="text-slate-300 leading-relaxed text-lg font-light relative z-10 max-w-3xl">
                     Mong muốn được tham gia chương trình thực tập trong môi trường chuyên nghiệp để tích lũy kinh nghiệm
-                    thực tế, nâng cao kỹ năng phân tích dữ liệu, xử lý thông tin và phối hợp công việc. Tôi kỳ vọng có
+                    thực tế, nâng cao kỹ năng <span class="text-white font-medium">phân tích dữ liệu</span>, xử lý thông tin và phối hợp công việc. Tôi kỳ vọng có
                     thể đóng góp sự chủ động, tinh thần học hỏi và trách nhiệm vào các nhiệm vụ được giao.
                 </p>
+                <!-- Dấu ngoặc kép trang trí -->
+                <div class="absolute -bottom-8 -right-4 text-9xl text-slate-800/30 font-serif rotate-12 pointer-events-none select-none">"</div>
             </div>
         </div>
     </section>
